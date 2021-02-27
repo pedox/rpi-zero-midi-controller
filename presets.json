@@ -1,0 +1,160 @@
+{
+  "modes": [
+    [
+      {
+        "name": "PROGRAM",
+        "labels": ["BANK 1", "BANK 2", "BANK 3"],
+        "modes": [
+          [
+            {
+              "kind": "midi",
+              "type": "program",
+              "data": {
+                "number": 0,
+                "channel": 0
+              }
+            }
+          ],
+          [
+            {
+              "kind": "midi",
+              "type": "program",
+              "data": {
+                "number": 1,
+                "channel": 0
+              }
+            }
+          ],
+          [
+            {
+              "kind": "midi",
+              "type": "program",
+              "data": {
+                "number": 2,
+                "channel": 0
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "SCENE",
+        "labels": ["S 1", "S 2", "S 3"],
+        "modes": [
+          [
+            {
+              "kind": "midi",
+              "type": "cc",
+              "data": {
+                "controller": 0,
+                "value": 127,
+                "channel": 0
+              }
+            }
+          ],
+          [
+            {
+              "kind": "midi",
+              "type": "cc",
+              "data": {
+                "controller": 1,
+                "value": 127,
+                "channel": 0
+              }
+            }
+          ],
+          [
+            {
+              "kind": "midi",
+              "type": "cc",
+              "data": {
+                "controller": 2,
+                "value": 127,
+                "channel": 0
+              }
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "name": "PLAYBACK",
+        "labels": ["PLAY/STOP", "RECORD", "UNDO"],
+        "modes": [
+          [
+            {
+              "kind": "keyboard",
+              "strokes": ["space"]
+            }
+          ],
+          [
+            {
+              "kind": "keyboard",
+              "strokes": ["left-ctrl r"]
+            }
+          ],
+          [
+            {
+              "kind": "keyboard",
+              "strokes": ["left-ctrl z"]
+            }
+          ]
+        ]
+      },
+      {
+        "name": "LOOPER",
+        "modes": [[], [], []]
+      }
+    ],
+    [
+      {
+        "name": "UTIL",
+        "labels": ["TUNER", "METRONOME", "TAP TEMPO"],
+        "modes": [
+          [
+            {
+              "kind": "midi",
+              "type": "cc",
+              "data": {
+                "controller": 15,
+                "value": 127,
+                "channel": 0
+              }
+            }
+          ],
+          [
+            {
+              "kind": "midi",
+              "type": "cc",
+              "data": {
+                "controller": 16,
+                "value": 127,
+                "channel": 0
+              }
+            }
+          ],
+          [
+            {
+              "kind": "midi",
+              "type": "cc",
+              "data": {
+                "controller": 17,
+                "value": 127,
+                "channel": 0
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "name": "CUSTOM 2",
+        "modes": [[], [], []]
+      },
+      {
+        "name": "CUSTOM 3",
+        "modes": [[], [], []]
+      }
+    ]
+  ]
+}
